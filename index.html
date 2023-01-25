@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" type="text/css"  href="xo_game.css">
+        
+    </head>
+    <body>
+         
+        <section>
+            
+            <h1>Lets XO</h1>
+            <div class="details">
+            <p >Player1: X</p>
+            <p>Player2: O</p>
+        </div>
+        <p id="display">Winner:</p>
+            <div class="table" >
+               <div class="row">
+                   <div onclick="XO1();winner()" id="cell1" class="cell1"></div>
+                   <div onclick="XO2();winner()" id="cell2" class="cell1"></div>
+                   <div onclick="XO3();no_clicks();winner()" id="cell3" class="cell1"></div>
+               </div>
+               <div class="row">
+                <div onclick="XO4();winner()" id="cell4" class="cell2"></div>
+                <div onclick="XO5();winner()" id="cell5" class="cell2"></div>
+                <div onclick="XO6();winner()"  id="cell6" class="cell2"></div>
+            </div>
+            <div class="row">
+                <div onclick="XO7();winner()" id="cell7" class="cell3"></div>
+                <div onclick="XO8();winner()" id="cell8" class="cell3"></div>
+                <div onclick="XO9();winner()" id="cell9" class="cell3"></div>
+            </div>
+            <a class="button" href="index.html">RESTART</a>
+            </div>
+            
+        </section>
+         
+        <script src="xo_game.js"></script>
+    </body>
+</html>

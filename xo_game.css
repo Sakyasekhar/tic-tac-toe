@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    background-image: url(xo_game_background.jpg);
+    background-position: center;
+    background-size: cover;
+    height: fit-content;
+      
+}
+
+section{
+    background-image: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+
+}
+h1{
+    background-image: none;
+    text-align: center;
+    color: rgb(53, 46, 130);
+    font-size: 50px;
+    
+}
+.details{
+    background-image: none;
+    display: flex ;
+    justify-content: space-around;
+    width: 30%;
+    margin: auto;
+    margin-top: 25px;
+}
+ p{ 
+    background-image: none;
+    width: 30%;
+    margin: auto;
+    text-align: center; 
+    color:rgb(53, 46, 130);
+    font-size: x-large;
+    font-weight: 800;
+}
+#display{
+    background-image: none;
+    margin-top: 12px;
+    color: black;
+    background-color: white;
+    width: fit-content;
+    border-radius: 10px;
+}
+.row{
+    background-image: none;
+    display: flex;
+    justify-content: center;
+
+}
+.table{
+    background-image: none;
+    width: fit-content;
+    height: 62%;
+    margin: auto;
+    margin-top: 10px;
+    justify-content: center;
+    justify-items: center;
+}
+
+
+.cell1,.cell2,.cell3{
+    background-image: none;
+    display: flex;
+    justify-content: center;
+    width: 140px;
+    height: 140px;
+    margin: 0;
+    text-align: center;
+    font-size: 100px;
+    color: rgb(53, 46, 130) ;
+    border: 3px solid black;
+    border-collapse: collapse;
+    cursor: pointer;
+}
+
+
+.cell1:nth-child(1),.cell1:nth-child(2),.cell1:nth-child(3){
+border-top: none;
+}
+.cell2:nth-child(1),.cell1:nth-child(1),.cell3:nth-child(1){
+    border-left: none;
+}
+.cell1:nth-child(3),.cell2:nth-child(3),.cell3:nth-child(3){
+border-right: none;
+}
+.cell3:nth-child(1),.cell3:nth-child(2),.cell3:nth-child(3){
+    border-bottom: none;
+}
+
+.button{
+    width: fit-content;
+text-decoration: none;
+display: flex;
+justify-content: center;
+font-size: x-large;
+font-weight: 800;
+margin: auto;
+margin-top: 40px;
+padding: 10px 0px;
+color:rgb(53, 46, 130) ;
+border: 3px solid rgb(53, 46, 130)  ;
+position: relative;
+}
+
+.button::before,.button::after{
+    content: "";
+    border: inherit; /*inherits from the button*/
+    position:absolute; /*unnadhi unnattu*/
+    width: 40px;
+    height: 40px;
+    transition: all .5s;
+}
+.button::before{
+    top: -10px;
+    left: -10px;
+    border-width: 3px 0 0 3px; /*top right bottom left*/
+}
+.button::after{
+    bottom:-10px;
+    right: -10px;
+    border-width: 0 3px 3px 0;
+}
+.button:hover::before,.button:hover::after{
+    width: calc(100% + 17px);
+    height: calc(100% + 17px);
+}
+
+
+
+
+
+
+
